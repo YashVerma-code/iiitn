@@ -1,8 +1,17 @@
-const App = () => {
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { Button } from './components/ui/button'
+
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div>
-      <h1 className="text-red-500">Button</h1>
-    </div>
+    <>
+      <h1 className='bg-red-300'>Hello</h1>
+      <Button variant="destructive">Click me</Button>
+    </>
   )
 }
 
