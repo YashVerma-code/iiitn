@@ -65,7 +65,9 @@ export default {
 				},
 			},
 			backgroundImage: {
-				'faculty-banner': "url('/cse/faculty/images/cover2.jpg')",
+				'bs-faculty-banner': "url('/bs/faculty/images/cover-temp.jpg')",
+				'cse-faculty-banner': "url('/cse/faculty/images/cover-temp.jpg')",
+				'ece-faculty-banner': "url('/ece/faculty/images/cover-temp.jpg')",
 			},
 		}
 	},

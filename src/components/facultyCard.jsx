@@ -2,16 +2,13 @@ import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogFooter,
     DialogHeader,
-    DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { useEffect, useRef, useState } from "react";
 
 
-const FacultyCard = () => {
+const FacultyCard = ({image,name,linkedin,post}) => {
 
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -63,8 +60,9 @@ const FacultyCard = () => {
                     >
                         <img
                             className="w-1/2 min-w-[150px] rounded-xl"
-                            src="/cse/faculty/images/person.jpg"
-                            alt=""
+                            src={image}
+                            alt={name}
+                            loading="lazy"
                         />
                         <div
                             className="w-full h-full flex flex-col justify-center gap-5"
@@ -75,12 +73,12 @@ const FacultyCard = () => {
                                 <p
                                     className="text-xl xl:text-4xl font-semibold"
                                 >
-                                    Saksham Agrawal
+                                    {name}
                                 </p>
                                 <p
                                     className="text-lg xl:text-2xl font-thin"
                                 >
-                                    Assistant Professor
+                                    {post}
                                 </p>
                             </div>
                             <p
@@ -93,7 +91,7 @@ const FacultyCard = () => {
                             >
                                 <a
                                     className="hover:text-blue-600"
-                                    href=""
+                                    href={linkedin}
                                 >
                                     <FaLinkedinIn />
                                 </a>
@@ -103,9 +101,10 @@ const FacultyCard = () => {
                 </DialogContent>
             </Dialog>
             <img
-                src="/cse/faculty/images/person.jpg"
-                alt="faculty"
                 className="w-full aspect-square"
+                src={image}
+                alt={name}
+                loading="lazy"
             />
             <div
                 className="w-full h-full flex-1 flex flex-col justify-center items-center gap-1 py-2"
@@ -113,19 +112,19 @@ const FacultyCard = () => {
                 <p
                     className="text-xl xl:text-2xl font-bold -mb-2"
                 >
-                    Saksham Agrawal
+                    {name}
                 </p>
                 <p
                     className="text-lg xl:text-xl font-normal"
                 >
-                    Assistant Professor
+                    {post}
                 </p>
                 <div
                     className="text-lg xl:text-2xl flex gap-2 z-50"
                 >
                     <a
                         className="hover:text-blue-600"
-                        href=""
+                        href={linkedin}
                     >
                         <FaLinkedinIn />
                     </a>
