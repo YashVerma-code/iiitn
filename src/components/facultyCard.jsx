@@ -62,7 +62,7 @@ const FacultyCard = ({image,name,linkedin,post}) => {
                             className="w-1/2 min-w-[150px] rounded-xl"
                             src={image}
                             alt={name}
-                            loading="lazy"
+                            loading="eager"
                         />
                         <div
                             className="w-full h-full flex flex-col justify-center gap-5"
@@ -104,7 +104,7 @@ const FacultyCard = ({image,name,linkedin,post}) => {
                 className="w-full aspect-square"
                 src={image}
                 alt={name}
-                loading="lazy"
+                loading="eager"
             />
             <div
                 className="w-full h-full flex-1 flex flex-col justify-center items-center gap-1 py-2"
