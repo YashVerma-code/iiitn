@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import Faculty from './pages/Faculty'
+import Faculty from './pages/Faculty/Faculty'
 
 function App() {
 
