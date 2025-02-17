@@ -8,7 +8,7 @@ export const header = {
 export const hod = {
     name: "Dr. Nishat A. Absari",
     image: "/cse/faculty/images/nishat-ansari.jpg",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/nishat-afshan-ansari-8319534a/",
     post: "Assistant Professor & HOD",
 }
  
@@ -16,37 +16,37 @@ export const faculties = [
     {
         name: "Dr. Tausif Diwan",
         image: "/cse/faculty/images/tausif-diwan.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/tausif-diwan-90584437/",
         post: "Associate Dean",
     },
     {
         name: "Dr. Jitendra V. Tembhurne",
         image: "/cse/faculty/images/jitendra-tembhurne.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/dr-jitendra-v-tembhurne-40777a17/",
         post: "Assistant Professor",
     },
     {
         name: "Dr. Pooja Jain",
         image: "/cse/faculty/images/pooja-jain.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/dr-pooja-jain-83522957/",
         post: "Assistant Professor",
     },
     {
         name: "Dr. Milind R. Penurkar",
         image: "/cse/faculty/images/milind-penurkar.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/dr-milind-penurkar-649b395/",
         post: "Assistant Professor",
     },
     {
         name: "Dr. Mayuri A. Digalwar",
         image: "/cse/faculty/images/mayuri-digalwar.jpg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/mayuri-digalwar-722a3823/",
         post: "Assistant Professor",
     },
     {
         name: "Dr. Richa K. Makhijani",
         image: "/cse/faculty/images/richa-makhijani.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/richa-makhijani-85490a339/",
         post: "Assistant Professor",
     },
     {
@@ -58,7 +58,7 @@ export const faculties = [
     {
         name: "Dr. Rahul Semwal",
         image: "/cse/faculty/images/rahul-semwal.jpeg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/rahul-semwal-6587411a0/",
         post: "Assistant Professor",
     },
     {
@@ -88,7 +88,7 @@ export const faculties = [
     {
         name: "Dr. Vrinda Yadav",
         image: "/cse/faculty/images/vrinda-yadav.jpg",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/vrinda-yadav-0b8b1775/",
         post: "Assistant Professor",
     },
     {

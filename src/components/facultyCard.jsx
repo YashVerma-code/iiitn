@@ -1,4 +1,5 @@
-import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import {
     Dialog,
     DialogContent,
@@ -8,7 +9,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 
-const FacultyCard = ({image,name,linkedin,post}) => {
+const FacultyCard = ({ image, name, linkedin, post }) => {
 
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -93,7 +94,13 @@ const FacultyCard = ({image,name,linkedin,post}) => {
                                     className="hover:text-blue-600"
                                     href={linkedin}
                                 >
-                                    <FaLinkedinIn />
+                                    <FaLinkedin />
+                                </a>
+                                <a
+                                    className="hover:text-blue-600"
+                                    href={linkedin}
+                                >
+                                    <MdEmail />
                                 </a>
                             </div>
                         </div>
@@ -126,7 +133,13 @@ const FacultyCard = ({image,name,linkedin,post}) => {
                         className="hover:text-blue-600"
                         href={linkedin}
                     >
-                        <FaLinkedinIn />
+                        <FaLinkedin />
+                    </a>
+                    <a
+                        className="hover:text-blue-600"
+                        href={linkedin}
+                    >
+                        <MdEmail />
                     </a>
                 </div>
             </div>

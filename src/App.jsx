@@ -5,6 +5,7 @@ import Faculty from './pages/Faculty/Faculty'
 import { faculties as eceFaculties,hod as eceHod, header as eceHeader } from "./data/ece/faculty"
 import { faculties as cseFaculties,hod as cseHod, header as cseHeader } from "./data/cse/faculty"
 import { faculties as bsFaculties,hod as bsHod, header as bsHeader } from "./data/bs/faculty"
+import AboutUs from './pages/About-us/About-us'
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
         <Route path="/" element={<Home />} />
 
 
+        <Route path="/about" element={<AboutUs/>} />
+
 
         <Route path="/bs/faculty" element={<Faculty faculties={bsFaculties} hod={bsHod} header={bsHeader} />} />
-
 
 
 
