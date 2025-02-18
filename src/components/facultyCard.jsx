@@ -9,7 +9,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 
-const FacultyCard = ({ image, name, linkedin, post }) => {
+const FacultyCard = ({ imageUrl, name, linkedin, post }) => {
 
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -61,7 +61,7 @@ const FacultyCard = ({ image, name, linkedin, post }) => {
                     >
                         <img
                             className="w-1/2 min-w-[150px] rounded-xl"
-                            src={image}
+                            src={imageUrl}
                             alt={name}
                             loading="eager"
                         />
@@ -109,7 +109,7 @@ const FacultyCard = ({ image, name, linkedin, post }) => {
             </Dialog>
             <img
                 className="w-full aspect-square"
-                src={image}
+                src={imageUrl}
                 alt={name}
                 loading="eager"
             />
