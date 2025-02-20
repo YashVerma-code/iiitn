@@ -78,3 +78,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  margin: 0 8px; /* Add spacing */
+  padding: 8px 15px; /* Adjust padding */
+  border-radius: 6px; /* Make buttons rounded */
+  border:2px solid black;
+}
