@@ -9,11 +9,11 @@ const Projects = ({
   consultancyProjects,
 }) => {
   return (
-    <div className="w-full min-h-screen flex flex-wrap justify-center overflow-x-hidden font-ubuntu bg-[#f0f0f0]">
+    <div className="w-auto min-h-screen flex flex-wrap justify-center overflow-x-hidden font-ubuntu bg-[#f0f0f0]">
       <img
         src={headerImg}
         alt="Faculty"
-        className="w-full h-[65vh] bg-fixed bg-center sm:bg-cover bg-no-repeat"
+        className="w-auto bg-fixed bg-center sm:bg-cover bg-no-repeat"
       />
       <div className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16">
         <div className="w-full h-[80px] flex justify-center items-center border-b-4">
@@ -33,7 +33,7 @@ const Projects = ({
           showGridlines
           rows={5}
           sortField="sno"
-          className="w-full p-2 text-base"
+          className="w-full p-2 sm:text-base text-sm"
           emptyMessage="No upcoming projects."
         >
           <Column
@@ -44,7 +44,7 @@ const Projects = ({
               width: "7%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -55,7 +55,7 @@ const Projects = ({
               width: "20%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -66,7 +66,7 @@ const Projects = ({
               width: "30%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -77,7 +77,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -88,7 +88,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -99,7 +99,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
         </DataTable>
@@ -117,7 +117,7 @@ const Projects = ({
           showGridlines
           rows={5}
           sortField="sno"
-          className="w-full p-2 text-base"
+          className="w-full p-2 sm:text-base text-sm"
           emptyMessage="No upcoming projects."
         >
           <Column
@@ -128,7 +128,7 @@ const Projects = ({
               width: "7%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -139,7 +139,7 @@ const Projects = ({
               width: "20%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -150,7 +150,7 @@ const Projects = ({
               width: "30%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -161,7 +161,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -172,7 +172,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
           <Column
@@ -183,7 +183,7 @@ const Projects = ({
               width: "15%",
               height: "100px",
               borderBottom: "2px solid #e5e7eb",
-              padding: "7px",
+              padding: "12px",
             }}
           />
         </DataTable>
@@ -205,7 +205,7 @@ const Projects = ({
             paginatorClassName="mt-4 flex flex-wrap gap-2 justify-center"
             rows={1}
             sortField="sno"
-            className="w-full p-2 text-base"
+            className="w-full p-2 sm:text-base text-sm"
             emptyMessage="No upcoming projects."
           >
             <Column
@@ -216,7 +216,7 @@ const Projects = ({
                 width: "7%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
             <Column
@@ -227,7 +227,7 @@ const Projects = ({
                 width: "20%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
             <Column
@@ -238,7 +238,7 @@ const Projects = ({
                 width: "30%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
             <Column
@@ -249,7 +249,7 @@ const Projects = ({
                 width: "15%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
             <Column
@@ -260,7 +260,7 @@ const Projects = ({
                 width: "15%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
             <Column
@@ -271,7 +271,7 @@ const Projects = ({
                 width: "15%",
                 height: "100px",
                 borderBottom: "2px solid #e5e7eb",
-                padding: "7px",
+                padding: "12px",
               }}
             />
           </DataTable>
