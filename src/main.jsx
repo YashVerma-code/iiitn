@@ -11,7 +11,4 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
-<<<<<<< HEAD
       
-=======
->>>>>>> 2717da7 (navbar and footer added)
