@@ -128,7 +128,7 @@ const Navbar = () => {
                     >
                       <a href={item.href}>{item.label}</a>
                       {item.subLinks && <ChevronDown size={16} />}
-                    </div>
+                    </div> 
                     <AnimatePresence>
                       {activeDropdown === item.href && item.subLinks && (
                         <motion.div

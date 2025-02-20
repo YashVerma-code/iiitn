@@ -13,7 +13,7 @@ const Home = () => {
         className="w-full h-screen object-cover"
       ></video>
       
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-white z-20 p-4 w-full h-screen bg-black bg-opacity-30">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-white z-20 p-4 w-full h-screen bg-black bg-opacity-30"> 
         <h1 className="text-3xl md:text-6xl font-bold text-blue-600 whitespace-normal px-2 pt-10">
           भारतीय सूचना प्रौद्योगिकी संस्थान, नागपुर
         </h1>

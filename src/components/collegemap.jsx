@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css"
 
 const MapComponent = () => {
   useEffect(() => {
-    const lat = 20.950917
+    const lat = 20.950917 
     const lng = 79.028557
 
     const map = L.map("map").setView([lat, lng], 14)

@@ -16,7 +16,7 @@ export default function Footer() {
           ].map((item, index) => (
             <a key={index} href={item.href}>
               <div className="h-10 w-10 rounded-full hover:bg-blue-800 p-2 transition-colors delay-75">
-                {item.icon}
+                {item.icon} 
               </div>
             </a>
           ))}
