@@ -34,7 +34,7 @@ const Navbar = () => {
 
           <div className="flex gap-4 mt-3 md:mt-0">
             <img
-              src="/second-logo.jpg"
+              src="/home/second-logo.jpg"
               alt="second logo"
               className="h-20 w-auto"
             />
