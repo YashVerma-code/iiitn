@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
-import navItems from "../constants/navlinks";
+import navItems from "../data/navlinks.js";
 import { Link } from "react-router-dom";
 
 
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           <div className="flex gap-4 mt-3 md:mt-0">
             <img
-              src="/second-logo.jpg"
+              src="/home/second-logo.jpg"
               alt="second logo"
               className="h-20 w-auto"
             />
@@ -104,8 +104,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
             <motion.div

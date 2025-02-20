@@ -4,7 +4,7 @@ import MapComponent from "./collegemap";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#002D62] text-white py-8">
+    <footer className="bg-[#002D62] text-white py-8 px-4">
       <div className="border-b border-white/10">
         <div className="container mx-auto px-4 py-3 flex justify-center space-x-6">
           {[

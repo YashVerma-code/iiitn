@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="flex flex-col min-h-screen w-full overflow-auto relative">
       <video
-        src="/college_tour.mp4"
+        src="/home/college_tour.mp4"
         autoPlay
         loop
         muted
