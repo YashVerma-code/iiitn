@@ -8,10 +8,12 @@ import Events from './pages/Events/Events'
 import { Pastevents, UpcomingEvents } from "./data/events/data";
 import {Upcomingprojects as eceUpcomingProjects,Completedprojects as eceCompletedProjects,headerImg as eceHeaderImg} from "./data/ece/projects";
 import {Upcomingprojects as cseUpcomingProjects,Completedprojects as cseCompletedProjects,headerImg as cseHeaderImg,consultancyProjects} from "./data/cse/projects";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
 
