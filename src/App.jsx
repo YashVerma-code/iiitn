@@ -1,3 +1,7 @@
+import Hostel from './pages/Hostel'
+import Placement from './pages/Placement'
+import Research from './pages/Research'
+
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -23,7 +27,7 @@ import DepartmentPage from "./pages/department-about/DeptAbout";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,6 +35,10 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
 
         <Route path="/:dept/faculty" element={<Faculty />} />
+          
+        <Route path="/hostel" element={<Hostel />} />
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/cse/research" element={<Research />}/>
 
         {/* <Route path="/bs/faculty" element={<Faculty faculties={bsFaculties} hod={bsHod} header={bsHeader} />} />
 

@@ -1,0 +1,30 @@
+.event-head{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.e-box{
+    width: 35vw;
+}
+.e-box{
+    border-width: 3px;
+    border-color: rgb(230, 228, 228);
+}
+.e-date{
+    border-right-color: rgb(230, 228, 228);
+    border-right-width: 3px;
+    text-align: center;  
+    color: rgb(245, 13, 5);
+}
+.e-date p{
+    font-size: 1.8em;
+    font-weight: 800;
+    font-family:'Times New Roman', Times, serif
+}
+.e-date h1{
+    font-size: 4.5em;
+    font-weight: 800;
+    font-family:'Times New Roman', Times, serif
+}
+.e-event{
+    font-weight: 750;
+}

@@ -1,0 +1,323 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-color: red; */
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.announce{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+.updates{
+  width:max-content;
+  position:relative;
+  cursor:pointer;
+ }
+ .updates::after{
+  content:"";
+  position:absolute;
+  bottom:-5px;
+  height:4px;
+  width:100%;
+  left:0;
+  background-color: rgb(240, 113, 9);
+  transform:scaleX(0);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+ }
+ .updates:hover::after{
+  transform:scaleX(1) ;
+ }
+.anouncement{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-left: auto;
+}
+.circle{
+    background: yellow;
+    height: 50px;
+}
+.btn{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-anc{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f17705;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  /* background: linear-gradient(#D5A3FF 0%, #77A5F8 100%); */
+}
+.wrapper{
+    
+  width: 200px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  
+
+}
+.wrapper header{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  position: relative;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+header label{
+  height: 100%;
+  z-index: 2;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+#tab-1:checked ~ header .tab-1,
+#tab-2:checked ~ header .tab-2,
+#tab-3:checked ~ header .tab-3{
+  color: #fff;
+}
+header label:nth-child(2){
+  width: 40%;
+}
+header .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, #f4f3f5 0%, #77A5F8 100%);
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ header .slider{
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+#tab-2:checked ~ header .slider{
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+#tab-3:checked ~ header .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+.wrapper input[type="radio"]{
+  display: none;
+}
+.card-area{
+  overflow: hidden;
+}
+.card-area .cards{
+  display: flex;
+  width: 300%;
+}
+.cards .row{
+    padding-top:20px ;
+  width: 33.4%;
+  height: 300px;
+}
+.cards .row-1{
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .card-area .cards .row-1{
+   margin-left: 0%;
+}
+#tab-2:checked ~ .card-area .cards .row-1{
+  margin-left: -33.4%;
+}
+#tab-3:checked ~ .card-area .cards .row-1{
+   margin-left: -66.8%;
+}
+.row .features li{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.features li i{
+  background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.features li span{
+  margin-left: 10px;
+}
+.wrapper button{
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: transform 0.3s ease;
+}
+.wrapper button:hover{
+  transform: scale(0.98);
+}
+.beside-anc{
+    display: flex;
+    
+}
+.life{
+    display: flex;
+    flex-direction: column;
+}
+.item-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1-item4{
+  display: flex;
+  margin: 0px;
+}
+.item-1{
+    background: #f17705;
+    height: 30vh;
+    width: 30vw;
+    margin-left:10px;
+}
+.item-2{
+    background: #02046d;
+    display: flex;
+    flex-direction: column;
+    margin-left:10px ;
+    height: 40vh;
+    width: 30vw;
+    color: #d3cece;
+    padding-left: 3vw;
+    padding-top: 15vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.item-2 a{
+  font-size: 0.3em;
+  padding-left:0.2vw ;
+  padding-top: 15px;
+}
+.item-3{
+    
+    height: 40vh;
+    justify-content: center;
+    width: 40vw;
+    /* text-align: center; */
+    padding-top:50px ;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-left:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.item-4{
+  background: #eeac6e;
+  height: 30vh;
+  width: 40vw;
+  
+}
+.item3-info{
+    font-weight: 500;
+    font-size: 0.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.life-a{
+  font-size: 0.4em;
+  
+}
+.life {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item1-item4, .item-horizontal {
+  display: flex;
+  gap: 10px;
+}
+
+.item-1, .item-4 {
+  position: relative; /* Needed for absolute positioning of hover text */
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.item-1:hover, .item-4:hover {
+  background: #979797;
+}
+
+/* Hidden text that appears on hover */
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: rgba(158, 58, 58, 0.75); */
+  color: rgb(252, 250, 250);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 3em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show text in the center on hover */
+.hover-item:hover .hover-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Remove hover effect from "Life at IIITN" */
+/* .item-3 {
+  position: relative;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+} */
+
+
+
