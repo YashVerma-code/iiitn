@@ -58,7 +58,7 @@ export const Upcomingprojects = [
     "total_funding": 1259600,
     "end_date": "2020-2021",
     "funding_organization": "SERB India",
-  }
+  },
 ]
 
 export const consultancyProjects=[

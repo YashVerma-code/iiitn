@@ -64,8 +64,26 @@ const StudentReview = () => {
             ))}
           </div>
           <div className="swiper-pagination mt-4"></div>
-          <div className="swiper-button-prev bg-gray-700 p-6 rounded-full text-white"></div>
-          <div className="swiper-button-next bg-gray-700 p-6 rounded-full text-white"></div>
+          <div
+            className="swiper-button-prev bg-gray-700 bg-opacity-70 p-6 rounded-full text-white"
+            style={{
+              "--swiper-navigation-size": "30px",
+              "--swiper-navigation-top-offset": "50%",
+              "--swiper-navigation-sides-offset": "30px",
+              "--swiper-navigation-color": "var(--swiper-theme-color)",
+              "--swiper-theme-color": "white"
+            }}
+          />
+          <div
+            className="swiper-button-next bg-gray-700 p-6 bg-opacity-70 rounded-full text-white"
+            style={{
+              "--swiper-navigation-size": "30px",
+              "--swiper-navigation-top-offset": "50%",
+              "--swiper-navigation-sides-offset": "30px",
+              "--swiper-navigation-color": "var(--swiper-theme-color)",
+              "--swiper-theme-color": "white"
+            }}
+          />
         </div>
       </div>
     </div>

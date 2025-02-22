@@ -24,6 +24,7 @@ import {
 import Navbar from "./components/navbar";
 import Governance from "./pages/governance/Governance";
 import DepartmentPage from "./pages/department-about/DeptAbout";
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
 
         <Route path="/:dept/about" element={<DepartmentPage />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

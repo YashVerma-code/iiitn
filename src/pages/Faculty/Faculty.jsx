@@ -52,7 +52,7 @@ const Faculty = () => {
         fetchFacultyData();
     }, [dept]);
 
-    if (loading) return <h2>Loading...</h2>;
+    // if (loading) return <h2>Loading...</h2>;
     if (error) return <h2>{error}</h2>;
 
 
@@ -81,7 +81,7 @@ const Faculty = () => {
                     </div>
                 </div>
             </div>
-            <div
+            {loading?<h2>Loading...</h2>:<div
                 className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16"
             >
                 <p
@@ -104,7 +104,7 @@ const Faculty = () => {
                         ))
                     }
                 </div>
-            </div>
+            </div>}
         </div >
     );
 }

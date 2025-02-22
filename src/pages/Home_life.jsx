@@ -62,49 +62,49 @@ const testimonials = [
 const Home_life = () => {
   return (
     <>
-    <div className="news text-center text-5xl font-serif ">News</div>
-    <div className="p-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 ">
-      <div className="md:col-span-3 flex flex-col gap-4 ">
-        <div className="flex flex-col md:flex-row gap-4">
-          {testimonials.slice(0, 2).map((testimonial) => (
-            <div key={testimonial.id} className={`p-6 rounded-lg shadow-lg ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.fontFamily}`}>
-              <div className="mb-4">
-                <p className="font-bold">{testimonial.name}</p>
-                <p className="text-sm opacity-70">{testimonial.status}</p>
+      <div className="news text-center text-5xl font-serif ">News</div>
+      <div className="p-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-y-4 lg:gap-x-4">
+        <div className="md:col-span-3 flex flex-col gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
+            {testimonials.slice(0, 2).map((testimonial) => (
+              <div key={testimonial.id} className={`p-6 rounded-lg shadow-lg ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.fontFamily}`}>
+                <div className="mb-4">
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-sm opacity-70">{testimonial.status}</p>
+                </div>
+                <h4 className="font-semibold text-lg mb-2">
+                  <a href="#" className={`${testimonial.linkColor} font-bold`}>{testimonial.title}</a>
+                </h4>
+                <p className="text-sm opacity-80">{testimonial.content}</p>
               </div>
-              <h4 className="font-semibold text-lg mb-2">
-                <a href="#" className={`${testimonial.linkColor} font-bold`}>{testimonial.title}</a>
-              </h4>
-              <p className="text-sm opacity-80">{testimonial.content}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="flex flex-col md:flex-row gap-4">
+            {testimonials.slice(2, 4).map((testimonial) => (
+              <div key={testimonial.id} className={`p-6 rounded-lg shadow-lg ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.fontFamily}`}>
+                <div className="mb-4">
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-sm opacity-70">{testimonial.status}</p>
+                </div>
+                <h4 className="font-semibold text-lg mb-2">
+                  <a href="#" className={`${testimonial.linkColor} font-bold`}>{testimonial.title}</a>
+                </h4>
+                <p className="text-sm opacity-80">{testimonial.content}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
-          {testimonials.slice(2, 4).map((testimonial) => (
-            <div key={testimonial.id} className={`p-6 rounded-lg shadow-lg ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.fontFamily}`}>
-              <div className="mb-4">
-                <p className="font-bold">{testimonial.name}</p>
-                <p className="text-sm opacity-70">{testimonial.status}</p>
-              </div>
-              <h4 className="font-semibold text-lg mb-2">
-                <a href="#" className={`${testimonial.linkColor} font-bold`}>{testimonial.title}</a>
-              </h4>
-              <p className="text-sm opacity-80">{testimonial.content}</p>
-            </div>
-          ))}
+        <div className={`p-6 rounded-lg shadow-lg ${testimonials[4].bgColor} ${testimonials[4].textColor} ${testimonials[4].fontFamily}`}>
+          <div className="mb-4">
+            <p className="font-bold">{testimonials[4].name}</p>
+            <p className="text-sm opacity-70">{testimonials[4].status}</p>
+          </div>
+          <h4 className="font-semibold text-lg mb-2">
+            <a href="#" className={`${testimonials[4].linkColor} font-bold`}>{testimonials[4].title}</a>
+          </h4>
+          <p className="text-sm opacity-80">{testimonials[4].content}</p>
         </div>
       </div>
-      <div className={`p-6 rounded-lg shadow-lg ${testimonials[4].bgColor} ${testimonials[4].textColor} ${testimonials[4].fontFamily}`}>
-        <div className="mb-4">
-          <p className="font-bold">{testimonials[4].name}</p>
-          <p className="text-sm opacity-70">{testimonials[4].status}</p>
-        </div>
-        <h4 className="font-semibold text-lg mb-2">
-          <a href="#" className={`${testimonials[4].linkColor} font-bold`}>{testimonials[4].title}</a>
-        </h4>
-        <p className="text-sm opacity-80">{testimonials[4].content}</p>
-      </div>
-    </div>
     </>
   );
 };

@@ -31,67 +31,64 @@ export default function EventPage({
       <div className="grid grid-cols-1 mt-10 border-b-4 pb-8 sm:w-2/3 w-full place-items-center">
         <div className="grid grid-cols-2 w-full gap-5 p-4 place-items-center text-lg">
           <button
-            className={`sm:text-xl font-semibold uppercase ${
-              activeTab === "trending"
+            className={`sm:text-xl font-semibold uppercase ${activeTab === "trending"
                 ? "border-b-2 border-black"
                 : "text-gray-500"
-            }`}
+              }`}
             onClick={() => setActiveTab("trending")}
           >
             Past Events
           </button>
           <button
-            className={`sm:text-xl font-semibold uppercase ${
-              activeTab === "upcoming"
+            className={`sm:text-xl font-semibold uppercase ${activeTab === "upcoming"
                 ? "border-b-2 border-black"
                 : "text-gray-500"
-            }`}
+              }`}
             onClick={() => setActiveTab("upcoming")}
           >
             UPCOMING
           </button>
         </div>
         <div className="w-full mt-5 flex justify-end flex-wrap">
-        <Popover open={open} onOpenChange={setOpen} >
-          <PopoverTrigger asChild>
-            <Button className="bg-red-700 text-white w-64 flex-1 sm:flex-none">
-              Filter{" "}
-              <span
-                className={`transition-transform duration-200 ${
-                  open ? "rotate-180" : ""
-                }`}
+          <Popover open={open} onOpenChange={setOpen} >
+            <PopoverTrigger asChild>
+              <Button className="bg-red-700 text-white w-64 flex-1 sm:flex-none">
+                Filter{" "}
+                <span
+                  className={`transition-transform duration-200 ${open ? "rotate-180" : ""
+                    }`}
                 >
-                ▼
-              </span>
-            </Button>
-          </PopoverTrigger>
-          <PopoverContent className="p-4 bg-white shadow-lg rounded-md w-full">
-          <div className="grid gap-4">
-          <div className="space-y-2">
-          </div>
-          <div className="grid gap-2">
-            <div className="grid grid-cols-3 items-center gap-4">
-              <label htmlFor="name">Event Name</label>
-              <input
-                id="name"
-                defaultValue=""
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <label htmlFor="doe">Date of Event</label>
-              <input
-                id="doe"
-                type="date"
-                defaultValue=""
-                className="col-span-2 h-8 p-2"
-              />
-            </div>
-          </div>
+                  ▼
+                </span>
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="p-4 bg-white shadow-lg rounded-md w-full">
+              <div className="grid gap-4">
+                <div className="space-y-2">
+                </div>
+                <div className="grid gap-2">
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <label htmlFor="name">Event Name</label>
+                    <input
+                      id="name"
+                      defaultValue=""
+                      className="col-span-2 h-8"
+                    />
+                  </div>
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <label htmlFor="doe">Date of Event</label>
+                    <input
+                      id="doe"
+                      type="date"
+                      defaultValue=""
+                      className="col-span-2 h-8 p-2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </PopoverContent>
+          </Popover>
         </div>
-          </PopoverContent>
-        </Popover>
-      </div>
       </div>
       {activeTab === "upcoming" ? (
         <EventCard events={UpcomingEvents} />
