@@ -20,6 +20,20 @@ export const Pastevents = [
     location: "Online",
     sponsor: "AICTE Under ATAL Workshop Scheme",
     coordinator: "Dr. Tapan Kumar Jain",
+  }, {
+    category: "WORKSHOP",
+    title: "7th Online Workshop on Internet of Things",
+    date: "7th May - 11th May 2020",
+    location: "Online",
+    sponsor: "AICTE Under ATAL Workshop Scheme",
+    coordinator: "Dr. Tapan Kumar Jain",
+  }, {
+    category: "WORKSHOP",
+    title: "7th Online Workshop on Internet of Things",
+    date: "7th May - 11th May 2020",
+    location: "Online",
+    sponsor: "AICTE Under ATAL Workshop Scheme",
+    coordinator: "Dr. Tapan Kumar Jain",
   },
   {
     category: "WORKSHOP",

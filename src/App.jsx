@@ -4,16 +4,27 @@ import Home from "./pages/Home";
 import Faculty from "./pages/Faculty/Faculty";
 import AboutUs from "./pages/About-us/About-us";
 import Projects from "./pages/Projecs/Projects";
-import Events from './pages/Events/Events'
+import Events from "./pages/Events/Events";
 import { Pastevents, UpcomingEvents } from "./data/events/data";
-import {Upcomingprojects as eceUpcomingProjects,Completedprojects as eceCompletedProjects,headerImg as eceHeaderImg} from "./data/ece/projects";
-import {Upcomingprojects as cseUpcomingProjects,Completedprojects as cseCompletedProjects,headerImg as cseHeaderImg,consultancyProjects} from "./data/cse/projects";
+import {
+  Upcomingprojects as eceUpcomingProjects,
+  Completedprojects as eceCompletedProjects,
+  headerImg as eceHeaderImg,
+} from "./data/ece/projects";
+import {
+  Upcomingprojects as cseUpcomingProjects,
+  Completedprojects as cseCompletedProjects,
+  headerImg as cseHeaderImg,
+  consultancyProjects,
+} from "./data/cse/projects";
 import Navbar from "./components/navbar";
+import Governance from "./pages/governance/Governance";
+import DepartmentPage from "./pages/department-about/DeptAbout";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -64,6 +75,13 @@ function App() {
             />
           }
         />
+
+        <Route
+          path="/governance/:committee"
+          element={<Governance headerImg={eceHeaderImg} />}
+        />
+
+        <Route path="/:dept/about" element={<DepartmentPage />} />
       </Routes>
     </div>
   );

@@ -10,19 +10,19 @@ const Projects = ({
 }) => {
   return (
     <div className="w-auto min-h-screen flex flex-wrap justify-center overflow-x-hidden font-ubuntu bg-[#f0f0f0]">
-      <img
-        src={headerImg}
-        alt="Faculty"
-        className="w-auto bg-fixed bg-center sm:bg-cover bg-no-repeat"
-      />
-      <div className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16">
+      <div
+        className="w-full h-[77vh] bg-cover bg-center sm:bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${headerImg})` }}
+      ></div>
+
+      <div className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16 px-10">
         <div className="w-full h-[80px] flex justify-center items-center border-b-4">
           <h1 className="w-[80%] h-full text-center text-4xl uppercase">
             Projects
           </h1>
         </div>
         <div className="w-full h-[40px] flex justify-center items-center">
-          <h2 className="w-full h-full text-left text-xl uppercase">
+          <h2 className="w-full h-full text-center md:text-left text-2xl uppercase">
             Ongoing projects :
           </h2>
         </div>
@@ -106,7 +106,7 @@ const Projects = ({
       </div>
       <div className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16">
         <div className="w-full h-[40px] flex justify-center items-center">
-          <h2 className="w-full h-full text-left text-xl uppercase">
+          <h2 className="w-full h-full text-center md:text-left text-2xl uppercase">
             Completed projects :
           </h2>
         </div>
@@ -192,7 +192,7 @@ const Projects = ({
       {consultancyProjects && (
         <div className="w-full lg:min-w-[100px] xl:min-w-[1300px] lg:w-3/4 min-h-screen flex flex-col flex-wrap items-center gap-10 py-16">
           <div className="w-full h-[40px] flex justify-center items-center">
-            <h2 className="w-full h-full text-left text-xl uppercase">
+            <h2 className="w-full h-full md:text-left text-2xl uppercase text-center">
               Consultancy Projects:
             </h2>
           </div>
@@ -203,7 +203,7 @@ const Projects = ({
             showGridlines
             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink"
             paginatorClassName="mt-4 flex flex-wrap gap-2 justify-center"
-            rows={1}
+            rows={5}
             sortField="sno"
             className="w-full p-2 sm:text-base text-sm"
             emptyMessage="No upcoming projects."

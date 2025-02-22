@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 const EventCard = ({ events }) => {
   const boxRefs = useRef([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const eventsPerPage = 6;
+  const eventsPerPage = 8;
   const indexOfLastEvent = currentPage * eventsPerPage;
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
   const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
@@ -43,7 +43,7 @@ const EventCard = ({ events }) => {
             opacity: 1,
             x: 0,
             duration: 1,
-            delay: index * 0.5,
+            delay: 0.5, //for seperate animation multiply by index * 
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,

@@ -61,4 +61,4 @@ export const Upcomingprojects = [
     }
   ]
 
-export const headerImg="/cse/projects/ImageBanner2.jpg"  
+export const headerImg="/bs/faculty/images/cover-temp.jpg"  
