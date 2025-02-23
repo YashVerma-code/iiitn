@@ -12,7 +12,7 @@ const navItems = [
         { href: "/governance/finance-committee", label: "Finance Committee" },
         { href: "/governance/senate", label: "Senate" },
         { href: "/governance/building-works-committee", label: "Building Works Committee" },
-        { href: "/administration", label: "Administration" },
+        { href: "/administration/chairman", label: "Administration" },
     ]},
     { href: "/department", label: "DEPARTMENT", subLinks: [
         { href: "/department/basic-sciences", label: "Basic Sciences" },

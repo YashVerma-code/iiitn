@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden md:block bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row justify-around items-center">
+        <div className="sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row justify-between items-start">
           <div className="flex gap-10 items-center">
             <span className="hidden md:block cursor-pointer">
               <Link to="/">
