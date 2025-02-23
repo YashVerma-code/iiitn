@@ -25,6 +25,8 @@ import Navbar from "./components/navbar";
 import Governance from "./pages/governance/Governance";
 import DepartmentPage from "./pages/department-about/DeptAbout";
 import Footer from './components/footer';
+import ChairmanProfile from './components/Profile';
+import Administration from './pages/administration/Administration';
 
 function App() {
   return (
@@ -91,6 +93,7 @@ function App() {
         />
 
         <Route path="/:dept/about" element={<DepartmentPage />} />
+        <Route path="/administration/:section" element={<Administration />} />
       </Routes>
       <Footer/>
     </div>
