@@ -46,7 +46,7 @@ export default function EventPage({ UpcomingEvents, Pastevents }) {
     }
 
     setFilteredEvents(filtered);
-    console.log("Date: ", eventDate);
+    // console.log("Date: ", eventDate);
   }, [activeTab, selectedCategory, eventName, eventDate]);
 
   return (
