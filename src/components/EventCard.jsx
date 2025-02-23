@@ -11,6 +11,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +23,7 @@ const EventCard = ({ events }) => {
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
   const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
   const totalPages = Math.ceil(events.length / eventsPerPage);
-  const maxVisiblePages = 5; 
+  const maxVisiblePages = 5;
 
   const handleNext = () => {
     if (currentPage < totalPages) setCurrentPage(currentPage + 1);
@@ -43,7 +44,7 @@ const EventCard = ({ events }) => {
             opacity: 1,
             x: 0,
             duration: 1,
-            delay: 0.5, //for seperate animation multiply by index * 
+            delay: 0.5, //for seperate animation multiply by index *
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
@@ -64,9 +65,21 @@ const EventCard = ({ events }) => {
     if (currentPage <= 3) {
       visiblePages = [1, 2, 3, 4, totalPages];
     } else if (currentPage >= totalPages - 2) {
-      visiblePages = [1,  totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+      visiblePages = [
+        1,
+        totalPages - 3,
+        totalPages - 2,
+        totalPages - 1,
+        totalPages,
+      ];
     } else {
-      visiblePages = [1, currentPage - 1, currentPage, currentPage + 1, totalPages];
+      visiblePages = [
+        1,
+        currentPage - 1,
+        currentPage,
+        currentPage + 1,
+        totalPages,
+      ];
     }
   }
 
@@ -78,19 +91,37 @@ const EventCard = ({ events }) => {
         )}
         {currentEvents.map((event, index) => (
           <div
-            key={index}
-            ref={(el) => (boxRefs.current[index] = el)}
-            className="bg-white shadow-md rounded-lg flex flex-wrap flex-col md:flex-row items-start min-h-fit hover:shadow-[0px_30px_40px_-8px_rgba(6,14,58,0.16)]"
+          key={index}
+          ref={(el) => (boxRefs.current[index] = el)}
+          className="bg-white shadow-md rounded-lg flex flex-wrap flex-col md:flex-row items-start min-h-fit hover:shadow-[0px_30px_40px_-8px_rgba(6,14,58,0.16)]"
           >
-            <div className="flex-1 min-h-[200px] space-y-2 flex flex-wrap justify-start items-center p-5 cursor-pointer">
-              <p className="text-sm text-red-600 font-semibold w-full">{event.category}</p>
-              <h3 className="text-lg font-bold w-full">{event.title}</h3>
-              <p className="text-sm text-gray-500 flex items-center w-1/2">📅 {event.date}</p>
-              <p className="text-sm text-blue-600 cursor-pointer w-1/2 text-right">📍 {event.location}</p>
-              {event.sponsor && <p className="text-sm text-green-600 w-full">🎗 Sponsored by {event.sponsor}</p>}
-              {event.coordinator && <p className="text-sm text-purple-600 w-full">👤 Coordinator: {event.coordinator}</p>}
+            <Link to={event.link} key={index} className="w-full h-full">
+              <div className="flex-1 min-h-[200px] space-y-4 flex flex-wrap justify-start items-center p-5 cursor-pointer">
+                <div className="w-full min-h-fit flex flex-wrap py-2 justify-start items-center gap-2 ">
+                  <p className="text-sm text-red-600 font-semibold w-full">
+                    {event.category}
+                  </p>
+                  <h3 className="text-lg font-bold w-full">{event.title}</h3>
+                </div>
+                <p className="text-sm text-gray-500 flex items-center w-full sm:w-1/2 ">
+                  📅 {event.startDate} to {event.endDate}
+                </p>
+                <p className="text-sm text-blue-600 cursor-pointer w-full sm:w-1/2 sm:text-right">
+                  📍 {event.location}
+                </p>
+                {event.sponsor && (
+                  <p className="text-sm text-green-600 w-full">
+                    🎗 Sponsored by {event.sponsor}
+                  </p>
+                )}
+                {event.coordinator && (
+                  <p className="text-sm text-purple-600 w-full">
+                    👤 Coordinator: {event.coordinator}
+                  </p>
+                )}
+              </div>
+          </Link>
             </div>
-          </div>
         ))}
       </div>
 
@@ -99,21 +130,31 @@ const EventCard = ({ events }) => {
           <Pagination>
             <PaginationContent>
               <PaginationItem>
-                <PaginationPrevious href="#" onClick={handlePrev} disabled={currentPage === 1} />
+                <PaginationPrevious
+                  href="#"
+                  onClick={handlePrev}
+                  disabled={currentPage === 1}
+                />
               </PaginationItem>
-              
-              {visiblePages.map((page, i) =>
-              (
-                  <PaginationItem key={i}>
-                    <PaginationLink href="#" onClick={() => setCurrentPage(page)} isActive={currentPage === page}>
-                      {page}
-                    </PaginationLink>
-                  </PaginationItem>
-                )
-              )}
+
+              {visiblePages.map((page, i) => (
+                <PaginationItem key={i}>
+                  <PaginationLink
+                    href="#"
+                    onClick={() => setCurrentPage(page)}
+                    isActive={currentPage === page}
+                  >
+                    {page}
+                  </PaginationLink>
+                </PaginationItem>
+              ))}
 
               <PaginationItem>
-                <PaginationNext href="#" onClick={handleNext} disabled={currentPage === totalPages} />
+                <PaginationNext
+                  href="#"
+                  onClick={handleNext}
+                  disabled={currentPage === totalPages}
+                />
               </PaginationItem>
             </PaginationContent>
           </Pagination>
