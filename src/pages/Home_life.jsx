@@ -2,61 +2,69 @@ import React from 'react';
 
 const testimonials = [
   {
-    id: 1,
-    name: "Priyanshu ",
-    status: "Verified Graduate",
-    title: "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
-    content: "I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup.",
-    // bgColor: "bg-[#EFB036]",
-    bgColor: "bg-[#FF8500]",
-    textColor: "text-white",
-    linkColor: "text-white hover:underline",
-    fontFamily: "font-sans"
+    
+      id: 1,
+      name: "3rd Convocation",
+      // status: "Verified Graduate",
+      title: "IIIT Nagpur held its 3rd convocation, celebrating achievements and excellence. The institute honored graduates with degrees, recognizing their dedication and hard work.",
+      content: "The convocation was a grand event attended by esteemed faculty and guests. Students were awarded degrees for their exceptional performances. The atmosphere was filled with pride and joy as graduates embarked on new journeys. Many have already secured roles in reputed organizations, reflecting the institute’s academic strength.",
+      image: "images/home/news.jpg",
+      bgColor: "bg-[#FF8500]",
+      textColor: "text-white",
+      linkColor: "text-white hover:underline",
+      fontFamily: "font-sans"
+  
+  
   },
   {
     id: 2,
-    name: "Varun",
-    status: "Verified Graduate",
-    title: "The team was very supportive and kept me motivated",
-    content: "I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself.",
+    name: "National Education Policy",
+    // status: "Verified Graduate",
+    title: "Celebrating three years of the National Education Policy, highlighting its transformative impact on learning, skill development, and future career opportunities.",
+    content: "The policy has revolutionized education by focusing on holistic growth and innovation. It has empowered students with practical knowledge and adaptability. Schools and colleges nationwide have embraced its vision, ensuring an inclusive, flexible, and multidisciplinary learning experience. The journey so far has been inspiring, shaping a new era of education in India.",
     bgColor: "bg-[#4C7B8B]",
     textColor: "text-white",
     linkColor: "text-white hover:underline",
     fontFamily: "font-sans"
-  },
-  {
-    id: 3,
-    name: "mera yashu yashu",
-    status: "Verified Graduate",
-    title: "An overall wonderful and rewarding experience",
-    content: "Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love.",
-    bgColor: "bg-[#3B6790]",
-    textColor: "text-gray-200",
-    linkColor: "text-white",
-    fontFamily: "font-sans"
-  },
-  {
-    id: 4,
-    name: "basanti",
-    status: "Verified Graduate",
-    title: "Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.",
-    content: "The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.",
-    bgColor: "bg-[#23485A]",
-    textColor: "text-gray-300",
-    linkColor: "text-gray-100 hover:underline",
-    fontFamily: "font-sans"
-  },
-  {
-    id: 5,
-    name: "Priyanshu",
-    status: "Verified Graduate",
-    title: "Such a life-changing experience. Highly recommended!",
-    content: "Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my development experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!",
-    bgColor: "bg-[#3B6790]",
-    textColor: "text-gray-200",
-    linkColor: "text-bg-[rgb(12_42_70)] hover:underline",
-    fontFamily: "font-serif"
-  }
+},
+{
+  id: 3,
+  name: "mera yashu yashu",
+  // status: "Verified Graduate",
+  title: "IIITN & HCL Foundation signed an MoU to undertake mass afforestation, promoting sustainability and ecological restoration.",
+  content: "The collaboration aims to drive large-scale tree plantation, enhancing biodiversity and combating climate change. This partnership fosters environmental consciousness and ensures a greener future.",
+  bgColor: "bg-[#3B6790]",
+  textColor: "text-gray-200",
+  linkColor: "text-white",
+  fontFamily: "font-sans"
+}
+,
+
+{
+  id: 4,
+  name: "Startup Ecosystem",
+  // status: "Verified Graduate",
+  title: "IIITN launches Innovation Cell to boost the startup ecosystem.",
+  content: "IIIT Nagpur has introduced an Innovation Cell to foster entrepreneurship and technological advancements. The initiative aims to support aspiring entrepreneurs by providing mentorship, funding opportunities, and industry collaborations. With a focus on research-driven innovation, the cell will help students and startups transform ideas into viable business ventures.",
+  bgColor: "bg-[#23485A]",
+  textColor: "text-gray-300",
+  linkColor: "text-gray-100 hover:underline",
+  fontFamily: "font-sans"
+}
+
+,
+{
+  id: 5,
+  name: "IIIT Nagpur",
+  status: "Social Media Update",
+  title: "IIITN Expands Digital Presence Across Social Media Platforms",
+  content: "IIIT Nagpur is strengthening its digital footprint by actively engaging with students, alumni, and industry leaders on various social media platforms. Follow us for the latest updates on academic events, research breakthroughs, and student achievements. Stay connected and be a part of our growing online community!",
+  bgColor: "bg-[#3B6790]",
+  textColor: "text-gray-200",
+  linkColor: "text-bg-[rgb(12_42_70)] hover:underline",
+  fontFamily: "font-serif"
+}
+
 ];
 
 const Home_life = () => {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Line, Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from "chart.js";
+
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
 
 const placementData = [
@@ -69,28 +70,30 @@ const placementData = [
       "Second Highest Package grabbed by our student is 45 LPA",
       "Third Highest Package is 44.92 LPA",
       "18 students from 2024 batch got the package above 20 LPA",
-      "Total 154 companies visited for On-campus for 2024 batch"
-    ]
+      "Total 154 companies visited for On-campus for 2024 batch",
+    ],
   },
 ];
 
 const PlacementStatistics = () => {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold">Placement Statistics</h1>
-      <div className="grid grid-cols-3 gap-6 mt-4">
+    <div className="p-4 md:p-6">
+      <h1 className="text-2xl font-bold text-center">Placement Statistics</h1>
+
+      {/* Placement Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
         {placementData.map((data) => (
           <Dialog key={data.year}>
-            <DialogTrigger className="p-4 bg-white shadow-md rounded-lg cursor-pointer hover:shadow-lg">
+            <DialogTrigger className="p-4 bg-white shadow-md rounded-lg cursor-pointer hover:shadow-lg transition duration-200">
               <div className="text-lg font-semibold">{data.year} Placements</div>
               <div className="text-gray-600">Avg Package: {data.averagePackage} LPA</div>
               <div className="text-gray-600">Median Package: {data.medianPackage} LPA</div>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="w-full max-w-lg">
               <DialogHeader>
                 <DialogTitle>Placement Data - {data.year}</DialogTitle>
               </DialogHeader>
-              <table className="w-full border-collapse border border-gray-300">
+              <table className="w-full border-collapse border border-gray-300 text-sm sm:text-base">
                 <thead>
                   <tr className="bg-gray-200">
                     <th className="border border-gray-300 px-4 py-2">Metric</th>
@@ -114,54 +117,68 @@ const PlacementStatistics = () => {
                     <td className="border border-gray-300 px-4 py-2">Total Companies</td>
                     <td className="border border-gray-300 px-4 py-2">{data.companies}</td>
                   </tr>
-                  {data.additionalInfo && data.additionalInfo.map((info, index) => (
-                    <tr key={index}>
-                      <td className="border border-gray-300 px-4 py-2" colSpan="2">{info}</td>
-                    </tr>
-                  ))}
+                  {data.additionalInfo &&
+                    data.additionalInfo.map((info, index) => (
+                      <tr key={index}>
+                        <td className="border border-gray-300 px-4 py-2" colSpan="2">
+                          {info}
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </DialogContent>
           </Dialog>
         ))}
       </div>
-      <div className="mt-10 grid grid-cols-2 gap-6">
+
+      {/* Charts Section */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Line Chart - Average & Median Package */}
         <div className="p-4 bg-white shadow-md rounded-lg">
-          <h3 className="text-xl font-semibold mb-4">Placement Trend (Avg & Median Package)</h3>
-          <Line
-            data={{
-              labels: placementData.map((data) => data.year),
-              datasets: [
-                {
-                  label: "Average Package (LPA)",
-                  data: placementData.map((data) => data.averagePackage),
-                  borderColor: "blue",
-                  backgroundColor: "rgba(0, 0, 255, 0.1)",
-                },
-                {
-                  label: "Median Package (LPA)",
-                  data: placementData.map((data) => data.medianPackage),
-                  borderColor: "green",
-                  backgroundColor: "rgba(0, 255, 0, 0.1)",
-                },
-              ],
-            }}
-          />
+          <h3 className="text-xl font-semibold mb-4 text-center">Placement Trend (Avg & Median Package)</h3>
+          <div className="w-full h-64">
+            <Line
+              data={{
+                labels: placementData.map((data) => data.year),
+                datasets: [
+                  {
+                    label: "Average Package (LPA)",
+                    data: placementData.map((data) => data.averagePackage),
+                    borderColor: "blue",
+                    backgroundColor: "rgba(0, 0, 255, 0.1)",
+                  },
+                  {
+                    label: "Median Package (LPA)",
+                    data: placementData.map((data) => data.medianPackage),
+                    borderColor: "green",
+                    backgroundColor: "rgba(0, 255, 0, 0.1)",
+                  },
+                ],
+              }}
+              options={{ maintainAspectRatio: false, responsive: true }}
+            />
+          </div>
         </div>
+
+        {/* Bar Chart - Companies Visited */}
         <div className="p-4 bg-white shadow-md rounded-lg">
-          <h3 className="text-xl font-semibold mb-4">Number of Companies Visited</h3>
-          <Bar
-            data={{
-              labels: placementData.map((data) => data.year),
-              datasets: [
-                {
-                  label: "Companies Visited",
-                  data: placementData.map((data) => data.companies),
-                  backgroundColor: "orange",
-                },
-              ],
-            }}
-          />
+          <h3 className="text-xl font-semibold mb-4 text-center">Number of Companies Visited</h3>
+          <div className="w-full h-64">
+            <Bar
+              data={{
+                labels: placementData.map((data) => data.year),
+                datasets: [
+                  {
+                    label: "Companies Visited",
+                    data: placementData.map((data) => data.companies),
+                    backgroundColor: "orange",
+                  },
+                ],
+              }}
+              options={{ maintainAspectRatio: false, responsive: true }}
+            />
+          </div>
         </div>
       </div>
     </div>
