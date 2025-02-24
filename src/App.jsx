@@ -31,6 +31,7 @@ import AcademicCalender from './pages/AcademicCalender';
 import TimeTable from './pages/TimeTable';
 import InternationalResearch from './pages/International_research';
 import Conferences from './pages/Conferences';
+import Admission from './pages/Admission';
 import ChairmanProfile from './components/Profile';
 import Administration from './pages/administration/Administration';
 
@@ -54,6 +55,7 @@ function App() {
         <Route path="/time_table" element={<TimeTable/>}/>
         <Route path="/international_research" element={<InternationalResearch/>}/>
         <Route path="/conferences" element={<Conferences/>}/>
+        <Route path="/admissions/ug" element={<Admission/>}/>
 
 
         {/* <Route path="/bs/faculty" element={<Faculty faculties={bsFaculties} hod={bsHod} header={bsHeader} />} />
