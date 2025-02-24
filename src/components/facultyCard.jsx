@@ -38,7 +38,7 @@ const FacultyCard = ({ imageUrl, name, linkedin, post }) => {
 
     return (
         <div
-            className={`min-w-[300px] max-w-[400px] w-1/3 min-h-[400px] lg:max-h-[700px] xl:min-h-[550px] h-1/2 rounded-2xl flex flex-col overflow-hidden bg-white hover:bg-orange-600 relative ${animate ? "animate-vertical-slide-in" : ""}`}
+            className={`min-w-[300px] max-w-[400px] w-1/3 min-h-[400px] lg:max-h-[700px] xl:min-h-[550px] h-1/2 rounded-2xl flex flex-col overflow-hidden bg-white hover:bg-gray-200 relative ${animate ? "animate-vertical-slide-in" : ""}`}
             ref={sectionRef}
         >
             <Dialog>

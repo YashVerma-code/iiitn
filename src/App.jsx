@@ -31,6 +31,8 @@ import AcademicCalender from './pages/AcademicCalender';
 import TimeTable from './pages/TimeTable';
 import InternationalResearch from './pages/International_research';
 import Conferences from './pages/Conferences';
+import ChairmanProfile from './components/Profile';
+import Administration from './pages/administration/Administration';
 
 function App() {
   return (
@@ -104,6 +106,7 @@ function App() {
         />
 
         <Route path="/:dept/about" element={<DepartmentPage />} />
+        <Route path="/administration/:section" element={<Administration />} />
       </Routes>
       <Footer/>
     </div>

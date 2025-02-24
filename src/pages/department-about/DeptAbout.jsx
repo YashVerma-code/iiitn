@@ -32,9 +32,9 @@ const DepartmentPage = () => {
       </p>
 
       {aboutData.stats?.length > 0 && (
-        <div className="w-full mt-8 grid md:grid-cols-3 grid-cols-1 gap-6 p-10">
+        <div className="w-full min-h-fit flex flex-wrap justify-center items-center mt-8 gap-6 p-6">
           {aboutData.stats.map((stat, index) => (
-            <div className="p-6 bg-blue-100 rounded-lg text-center" key={index}>
+            <div className="grid min-h-[110px] w-full sm:w-1/2 md:w-1/4 h-full p-4 bg-blue-100 rounded-lg text-center" key={index}>
               <h3 className="text-2xl font-semibold">{stat.value}</h3>
               <p className="text-gray-700">{stat.type}</p>
             </div>
@@ -47,22 +47,22 @@ const DepartmentPage = () => {
             {subdomain.title}
           </h2>
 
-          <ul className="grid gap-4 mt-4 w-full text-gray-600 leading-relaxed">
+          <ul className="flex flex-wrap justify-start mt-4 w-full text-gray-600 leading-relaxed">
             {subdomain.detail.map((item, index) => (
-              <li key={index} className="p-4 font-medium">
+              <li key={index} className="p-4 font-medium w-full">
                 {item}
               </li>
             ))}
           </ul>
 
           {subdomain.jobarea?.length > 0 && (
-            <div className="grid md:grid-cols-3 gap-4 mt-6">
+            <div className="w-full min-h-fit flex flex-wrap justify-center items-center mt-6 gap-6">
               {subdomain.jobarea.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 bg-gray-100 rounded-lg text-center text-gray-700 font-medium"
+                  className="min-h-[100px] w-full sm:w-1/2 md:w-1/4 h-full text-center bg-gray-100 rounded-lg text-gray-700 font-medium flex flex-wrap items-center justify-center p-2"
                 >
-                  {item}
+                  <p >{item}</p>
                 </div>
               ))}
             </div>
