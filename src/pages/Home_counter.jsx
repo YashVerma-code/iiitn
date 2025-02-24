@@ -48,9 +48,10 @@ const HomeCounter = () => {
   }, []);
 
   return (
-    <div className="h-screen/2 flex items-center justify-center bg-cover bg-center relative px-8 py-20" style={{ backgroundImage: "url('images/home/success.jpg')" }}>
+    <div className="h-screen/2 flex items-center justify-center bg-cover bg-center relative px-8 py-20" style={{ backgroundImage: "url('home/main-gate.jpg')" }}>
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative z-10 text-white text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-20 lg:gap-24 xl:gap-24 relative z-10 text-white text-center">
+
         {countersData.map((counter, index) => (
           <div key={index} className="counter">
             <h1 className="count text-5xl font-bold" data-target={counter.target}>0</h1>

@@ -6,10 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const cardDetails = [
-  { image: "images/home/ece.jpg", title: "B-tech (CORE)", badge: "Computer Science and Engineering" },
-  { image: "images/home/csam-banner-btech.jpg", title: "B-tech (ECE)", badge: "Electronics and Communication" },
+  { image: "home/cse.jpg", title: "B-tech (CORE)", badge: "Computer Science and Engineering" },
+  { image: "home/ece.jpg", title: "B-tech (ECE)", badge: "Electronics and Communication" },
   { image: "images/home/mtech-cse.jpg", title: "B-Tech (AI-ML)", badge: "Artificial Intelligence and Machine Learning" },
-  { image: "images/home/ece-banner-btech.jpg", title: "B-Tech (IOT)", badge: "Internet of Things" },
+  { image: "home/iot.jpg", title: "B-Tech (IOT)", badge: "Internet of Things" },
   { image: "images/home/pg-diploma2.jpg", title: "B-Tech (HCIGT)", badge: "Human Computing and Gaming Technology" },
   { image: "images/home/pg-diploma2.jpg", title: "B-Tech (DS)", badge: "Data Science" }
 ];
