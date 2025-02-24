@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
 const countersData = [
-  { target: 1254, label: "New Visitors Every Week" },
-  { target: 12168, label: "Happy Customers Every Year" },
-  { target: 2172, label: "Won Amazing Awards" },
-  { target: 732, label: "New Listings Every Week" },
+  { target:800 , label: "Publications" },
+  { target: 2508, label: "Alumini" },
+  { target:4573, label: "Students" },
+  { target: 2847, label: "Placements" },
 ];
 
 const HomeCounter = () => {

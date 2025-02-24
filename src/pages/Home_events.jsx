@@ -23,16 +23,16 @@ const Event = ({ date, month, title, duration }) => {
 const HomeEvents = () => {
   const events = [
     {
-      date: "17",
-      month: "Feb",
-      title: "Conference for Technology for Disabled Persons",
-      duration: "17/02/2025 - 18/02/2025",
+      date: "30",
+      month: "Jan",
+      title: "Innovating the Future: Advance Electromagnetics Towards the IoT and 6G Wireless Communication Era",
+      duration: "30 january 2025",
     },
     {
       date: "22",
-      month: "Mar",
-      title: "AI & Machine Learning Workshop",
-      duration: "22/03/2025",
+      month: "Jan",
+      title: "Empowering Entrepreneurship with AI",
+      duration: "22/01/2025",
     },
     {
       date: "05",
