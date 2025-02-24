@@ -65,7 +65,7 @@ const Home_research = () => {
   }, [scrolling]);
 
   return (
-    <div className="blog-announcements bg-gray-100 p-16 flex flex-wrap gap-8">
+    <div className="blog-announcements p-16 flex flex-wrap gap-8">
       {/* Research Section */}
       <div className="flex-1 min-w-full sm:min-w-[60%]">
         <h2 className="text-3xl font-bold mb-6 pl-10">Faculty Achievement</h2>

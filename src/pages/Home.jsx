@@ -10,11 +10,12 @@ import Home_research from "./Home_research";
 // import Home_testimonial from "./Home_testimonial";
 import Student_review from "./Student_review";
 import Typewriter from "typewriter-effect";
+import "../css/font.css"
 import Footer from "./../components/footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-auto relative">
+    <div className="flex flex-col min-h-screen w-full overflow-auto relative font-ubuntu">
       <video
         src="/home/college_tour.mp4"
         autoPlay

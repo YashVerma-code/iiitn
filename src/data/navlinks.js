@@ -1,9 +1,7 @@
 const navItems = [
     { href: "/about-us", label: "ABOUT US", subLinks: [
-        { href: "/about-us/act", label: "Act (PPP)" },
-        { href: "/about-us/statute", label: "Statute" },
-        { href: "/about-us/profile", label: "Institute Profile" },
-        { href: "/about-us/facilities", label: "Facilities" },
+        { href: "/about", label: "About Us" },
+        { href: "/events", label: "Events" },
         { href: "/about-us/annual-report", label: "Annual Report" },
         { href: "/about-us/mou", label: "MoU" },
     ]},
@@ -40,8 +38,7 @@ const navItems = [
         { href: "/alumni/about", label: "About Us" },
     ]},
     { href: "/placements", label: "PLACEMENTS", subLinks: [
-        { href: "/placements/about", label: "About Us" },
-        { href: "/placements/recruit", label: "Why Recruit from IIITN?" },
+        { href: "/placements", label: "About Us" },
         { href: "/placements/stats", label: "Placement Statistics" },
         { href: "/placements/companies", label: "For Companies" },
         { href: "/placements/students", label: "For Students" },
@@ -53,11 +50,13 @@ const navItems = [
         { href: "/students/achievements", label: "Achievements" },
         { href: "/students/counselling", label: "Clinical Counselling" },
         { href: "/students/scholarships", label: "Scholarships" },
-        { href: "/students/hostel", label: "Hostel" },
+        { href: "/academic-calender", label: "Academic Calendar" },
+        { href: "/time_table", label: "Time-Table" },
+        { href: "/hostel", label: "Hostel" },
         { href: "/students/mess", label: "Student Mess" },
         { href: "/students/downloads", label: "Download" },
         { href: "/students/convocation", label: "Convocation 2023" },
-        { href: "/students/fees", label: "Fees" },
+        { href: "/fees_payment", label: "Fees" },
     ]},
     { href: "/nirf", label: "NIRF", subLinks: [
         { href: "/nirf/2025", label: "NIRF 2025" },
@@ -65,6 +64,8 @@ const navItems = [
         { href: "/nirf/2023", label: "NIRF 2023" },
     ]},
     { href: "/others", label: "OTHERS", subLinks: [
+        { href: "/international_research", label: "International Research" },
+        { href: "/conferences", label: "Conferences" },
         { href: "/others/consultancy", label: "Consultancy" },
         { href: "/others/iic", label: "Institution Innovation Council" },
         { href: "/others/documents", label: "Official Documents" },

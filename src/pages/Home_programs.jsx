@@ -100,7 +100,7 @@ const HomePrograms = () => {
                     </div>
                   </a>
                   <button
-                    className="read-more border-2 border-gray-400 text-gray-400 px-4 py-2 rounded-full absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-colors duration-300 hover:bg-teal-500 hover:text-white"
+                    className="read-more border-2 border-gray-400 text-gray-400 px-4 py-2 rounded-full absolute bottom-5 left-1/2 transform -translate-x-1/2 transition-colors duration-300 hover:bg-[#3B6790] hover:text-white"
                   >
                     Read More
                   </button>

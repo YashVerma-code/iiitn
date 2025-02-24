@@ -60,7 +60,7 @@ const Navbar = () => {
                 >
                   <a
                     href={item.href}
-                    className="relative flex items-center gap-2 px-2 py-2 transition-all duration-300 ease-in-out rounded-md hover:bg-orange-100 hover:shadow-md"
+                    className="relative flex items-center gap-2 px-2 py-2 transition-all duration-300 ease-in-out rounded-md hover:bg-blue-100 hover:shadow-md"
                   >
                     {item.label}
                     {item.subLinks && <ChevronDown size={16} />}
