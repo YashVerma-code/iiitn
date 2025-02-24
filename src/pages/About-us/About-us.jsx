@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div className="max-w-[100vw] min-h-screen flex justify-center items-center flex-col overflow-x-hidden font-ubuntu bg-[#f0f0f0]">
             <AboutCard />
             <div
-                className="w-full min-h-[600px] h-screen sm:h-[50vh] flex flex-col justify-evenly items-center bg-red-400"
+                className="w-full min-h-[600px] h-screen sm:h-[50vh] flex flex-col justify-evenly items-center bg-[#002D62]"
             >
                 <p
                     className="text-4xl sm:text-6xl text-white font-bold"
