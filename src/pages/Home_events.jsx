@@ -55,7 +55,7 @@ const HomeEvents = () => {
         <h1 className="text-3xl sm:text-4xl font-bold text-center sm:text-left pl-8">
           Events at IIITN
         </h1>
-        <a href="#" className="text-blue-600 hover:underline mt-4 sm:mt-0">
+        <a href="/events" className="text-blue-600 hover:underline mt-4 sm:mt-0">
           Read More
         </a>
       </div>
