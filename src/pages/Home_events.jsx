@@ -43,7 +43,7 @@ const HomeEvents = () => {
     {
       date: "12",
       month: "May",
-      title: "Blockchain & Web3 Seminar",
+      title: "Blockchain & Web3",
       duration: "12/05/2025 - 13/05/2025",
     },
   ];
